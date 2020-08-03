@@ -1,7 +1,7 @@
 <html>
 <head>
     <!--Add your title here-->
-    <title>Text Me - Powered by SuperPhone®</title>
+    <title>TECHnically Yours™: Podcast Alerts</title>
     
     <!--This code makes the website responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <!--This is the favicon for the browser tab-->
-    <link rel="shortcut icon" href="https://app.superphone.io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="cell-phone.png" type="image/x-icon">
     
     <!--These are the stylesheets for the page-->
     <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
     <!--This is the actual function that calls the form widget-->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -47,10 +46,10 @@
                 formData.map(function (element) {
                     requestData[element.name] = element.value;
                 });
-    
+		    
                 // Send post to API
                 $.ajax({
-                    url: 'https://superphone.io/w/my-url', // Url where to submit the request
+                    url: 'https://superphone.io/w/9dv3BW', // Url where to submit the request
                     type: "POST",
                     beforeSend: function (request) {
                         request.setRequestHeader("Access-Control-Allow-Origin", "*");
@@ -87,10 +86,13 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
         }
         
         *{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'League-Spartan', sans-serif;
         }    
 
     button#submitButton {
@@ -195,13 +197,13 @@
     <div class="page-center">
     <div class="custom-form">
         <div class="container">
-            <h1 class="text-center" style="font-weight: bold">YOUR NAME HERE</h1>
-            <p class="text-center" style="font-size: 21px">PLEASE ENTER YOUR PHONE NUMBER<br>AND I WILL TEXT YOU RIGHT BACK:</p>
+            <h1 class="text-center" style="font-weight: bold">🙋🏽‍♀️ HEY! IT'S KRIS 👩🏽‍💻 THEBLACKTECHIE™</h1>
+            <p class="text-center" style="font-size: 21px">👍🏽 WANT TO KNOW WHEN I DROP A NEW PODCAST EPISODE? <br> 📱 SIGNUP FOR MY PODCAST MOBILE ALERTS <br>👇🏽 LEAVE YOUR NUMBER BELOW</p>
             <form id="addContact" class="form-horizontal" style="min-width: 100%" method="POST" action="#" autocomplete="false" data-parsley-validate>
                 <div class="form-group">
                     <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-4">
                         <input autocomplete="off" tabindex="4" type="tel" class="form-control" id="phone" name="mobile"
-                                placeholder="Mobile # (w/country code)" data-parsley-trigger="focusout"
+                                placeholder="Cell # (w/country code)" data-parsley-trigger="focusout"
                                 data-parsley-minlength="9" data-parsley-required>
                     </div>
                     <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-4">
@@ -220,7 +222,7 @@
     
     <!--This is the text for the success page-->
     <div class="form-success">
-            <h1>Just texted you - please check your messages.</h1>
+            <h1>💁🏽‍♀️ I just texted you! 📲 Like for real...</h1></h1>
     </div>
     </div>
 </body>
